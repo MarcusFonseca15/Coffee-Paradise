@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Paradise</title>
+    <meta name="descricao" content="Explore dezenas de variações de bebidas ao redor do mundo!">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header> <!--HEADER-->
+        <nav>
+            <span class="logo">Coffee Paradise</span> <!--A Classe diferencia o span, caso tenha outros (pode servir pra ul, section, etc)-->
+            <ul class="menu">
+                <li><a>Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a>Promoções</a></li>
+                <li><a>Sobre</a></li>
+            </ul>
+            <a href="https://github.com/Markittus" target="_blank" rel="noreferrer noopener" class="gitHubLogo">GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="principal">
+            <section class="hero">
+                <header class="hero-conteudo">
+                    <span class="destaque marrom">novidades</span>
+                    <h1>Encontre os melhores cafés!</h1>
+                    <hr>
+                    <h2 class="hero-subtitle">Explore dezenas de variações de bebidas ao redor do mundo!</h2>
+                </header>
+                <div class="hero-imagens-container">
+                    <figure><img src="assets/cafe1.jpg"/></figure>
+                    <figure><img src="assets/cafe2.jpg"/></figure>
+                    <figure><img src="assets/cafe3.jpg"/></figure>
+                    <figure><img src="assets/cafe4.jpg"/></figure>
+                    <figure><img src="assets/cafe5.jpg"/></figure>
+                    <figure><img src="assets/cafe6.jpg"/></figure>
+                    <figure><img src="assets/cafe7.jpg"/></figure>
+                </div>
+            </section>
+        </div>
+
+        <section class="botao-container"> <!--BOTAO DE VER MAIS-->
+            <button type="button" class="button">
+                <img src="assets/botaoCafe.png"/>
+            </button>
+        </section>
+
+        <section class="cardapio"><!--Cardapio Geral--> <!--Add +3 bebidas-->
+            <header class="cardapio-header">
+                <span class="destaque marrom">cardápio</span>
+                <h2 class="cardapio-titulo">Confira nossos deliciosos cafés</h2>
+                <p class="cardapio-subtitulo">Dê uma olhada nas bebidas mais amadas</p>
+            </header>
+            <div class="cardapio-card-container"><!--Divisao-->
+                <div class="cardapio-card"> 
+                    <header class="cardapio-card-header"> <!--CABEÇALHO DO CARD-->
+                        <div class="cardapio-card-header-details">
+                            <span class="destaque amarelo">EM ALTA!🔥</span>
+                            <h3 class="cafe1-titulo">Capuccino</h3>
+                        </div>
+                        <p class="cardapio-avaliacao">Extraordinário - 4/4</p>
+                    </header> <!---------------->
+                    <p>Uma bebida clássica e simples para todos os amantes de café</p>
+                    <div class="cardapio-cli1">
+                        <img src="assets/Cliente1.jpg">
+                        <span class="cardapio-cli1-nome">Marcelina Azevedo</span>
+                    </div>
+                </div>
+            </div><!--Divisao-->
+        </section>
+
+    </main> 
+
+    <footer class="footer">
+        <p class="footer-copy">Copyright &lt; PARADISE &gt; 2025</p>
+        <p class="footer-autor">Feito com muito esforço e carinha por Marcus Fonseca kk</p>
+    </footer>
+</body>
+</html>
