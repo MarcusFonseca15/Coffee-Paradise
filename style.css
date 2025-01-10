@@ -29,6 +29,11 @@ a:hover { /*Mouse em cima*/
 ul {
     list-style: none; /*Evitar decorações predef*/
 }
+.header{
+    position: sticky;
+    top: 0px;
+    background: #241A1C;
+}
 
 nav {
     max-width: 1120px; /*Largura maxima*/
