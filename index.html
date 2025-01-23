@@ -6,6 +6,8 @@
     <title>Coffee Paradise</title>
     <meta name="descricao" content="Explore dezenas de variações de bebidas ao redor do mundo!">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!---------LINKAR O SWIPPER PRO CSS-------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header"> <!--HEADER-->
@@ -41,29 +43,92 @@
             </div>
         </div>
 
+        <!--SELECT TIPO-->
+        <section class="sele-produt">
+            <div class="filter-box FiltroSelecionado" data-filter="cafés">
+                <button>
+                    <span>Cafés</span>
+                    <span2>Cafés</span2>
+                    <img src="assets/CafeCopo.png" alt="Filtro para Café"
+                </button>
+            </div>
+            <div class="filter-box" data-filter="bebidas-frias">
+                <button>
+                    <span>Bebidas Frias</span>
+                    <span2 class="hidden">Bebidas Frias</span2>
+                    <img src="assets/CafeCopo.png" alt="Filtro para Bebidas frias"
+                </button>
+            </div>
+            <div class="filter-box" data-filter="sobremesas">
+                <button>
+                    <span class="hidden">Sobremesas</span>
+                    <span2 class="hidden">Sobremesas</span2>
+                    <img src="assets/CafeCopo.png" alt="Filtro para Sobremesas"
+                </button>
+            </div>
+            <div class="filter-box" data-filter="combos">
+                <button>
+                    <span>Combos</span>
+                    <span2 class="hidden">Combos</span2>
+                    <img src="assets/CafeCopo.png" alt="Filtro para Combos"
+                </button>
+            </div>
+        </section>
         <!--Cardapio Geral-->
-        <section class="cardapio">
+        <section class="cardapio">      <!--TITULO-->
             <header class="cardapio-header">
-                <span class="destaque marrom">cardápio</span>
-                <h2 class="cardapio-titulo">Confira nossos deliciosos cafés</h2>
-                <p class="cardapio-subtitulo">Dê uma olhada nas bebidas mais amadas</p>
+                <span class="cardapioTitulo">CARDÁPIO</span>
             </header>
-            <div class="cardapio-card-container"><!--Divisao-->
-                <div class="cardapio-card"> 
-                    <header class="cardapio-card-header"> <!--CABEÇALHO DO CARD-->
-                        <div class="cardapio-card-header-details">
-                            <span class="destaque amarelo">EM ALTA!🔥</span>
-                            <h3 class="cafe1-titulo">Capuccino</h3>
-                        </div>
-                        <p class="cardapio-avaliacao">Extraordinário - 4/4</p>
-                    </header> <!---------------->
-                    <p>Uma bebida clássica e simples para todos os amantes de café</p>
-                    <div class="cardapio-cli1">
-                        <img src="assets/Cliente1.jpg">
-                        <span class="cardapio-cli1-nome">Marcelina Azevedo</span>
-                    </div>
-                </div>
+
+            <div class="cardapio-container swiper"><!--Divisao-->
+                <div class="card-wrapper">
+                <ul class="card-list swipper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>15,99<br>Latte<br>Cafeinado</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>18,99<br>Espresso<br>Intenso</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>22,49<br>Cappuccino<br>Cremoso</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>14,79<br>Macchiato<br>Suave</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>19,50<br>Mocha<br>Doce e Cremoso</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="cardapio.html" class="card-link aException">
+                            <articleInfo>21,30<br>Flat White<br>Equilibrado</articleInfo>
+                            <img src="assets/CafeCopo.png" alt="Café imagem">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-btn-prev"></div>
+                <div class="swiper-btn-next"></div>
+            </div>
             </div><!--Divisao-->
+            <!--SCRIPT SWIPPER-->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="script.js"></script>
         </section>
 
     </main> 
